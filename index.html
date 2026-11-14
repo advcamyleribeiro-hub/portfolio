@@ -1,0 +1,102 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Camyle Ribeiro | Direito e Produto</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--verde:#121D14;--creme:#F3EDE2;--lil:#B8A6D4;--lil2:#8C76B0;--ouro:#C2A15F}
+*{box-sizing:border-box;margin:0}body{font-family:Inter,sans-serif;color:var(--verde);background:var(--creme);line-height:1.6}
+h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400}
+.wrap{max-width:1100px;margin:auto;padding:0 24px}
+section{padding:88px 0}.dark{background:var(--verde);color:var(--creme)}
+.tag{font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--lil2)}.dark .tag{color:var(--lil)}
+.fio{width:56px;height:1px;background:var(--ouro);margin:18px 0 28px}
+header{min-height:92vh;display:flex;align-items:center}
+header .wrap{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:center}
+header h1{font-size:clamp(38px,6vw,68px);line-height:1.1;margin:18px 0}header h1 em{color:var(--lil)}
+header p{max-width:560px;opacity:.88}.logo{width:100%;max-width:340px;justify-self:center}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:28px 0}.chips span{border:1px solid var(--lil);color:var(--lil);padding:5px 14px;border-radius:99px;font-size:14px}
+.btn{display:inline-block;padding:12px 26px;border:1px solid var(--ouro);color:var(--creme);text-decoration:none;margin-right:10px}.btn.f{background:var(--ouro);color:var(--verde)}
+h2{font-size:clamp(30px,4vw,44px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{padding:28px;border:1px solid rgba(18,29,20,.15);background:#fff6}.dark .card{border-color:rgba(184,166,212,.3);background:none}
+.card h3{font-size:22px;margin-bottom:8px}.card .n{color:var(--ouro);font-family:'Playfair Display';font-size:15px}
+.dados{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}.dados b{font-family:'Playfair Display';font-size:40px;font-weight:400;color:var(--lil2);display:block}
+.duas{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.principio{font-family:'Playfair Display';font-style:italic;font-size:clamp(24px,3vw,34px);color:var(--lil);border-left:1px solid var(--ouro);padding-left:24px;margin:30px 0}
+.caso{padding:30px;border:1px solid rgba(184,166,212,.3);margin-bottom:22px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px}.caso h3{grid-column:1/-1;font-size:26px}.caso .tag{display:block;margin-bottom:6px}.lista{columns:2;gap:40px;margin-top:30px;padding-left:18px}.lista li{margin-bottom:8px}
+@media(max-width:760px){.caso{grid-template-columns:1fr}.lista{columns:1}}
+footer{background:var(--verde);color:var(--creme);padding:56px 0;border-top:1px solid var(--ouro);text-align:center;font-size:15px}footer img{width:90px}
+@media(max-width:760px){header .wrap,.duas{grid-template-columns:1fr}.logo{max-width:200px;order:-1}.dados{grid-template-columns:1fr}section{padding:64px 0}}
+.tl{border-left:1px solid var(--ouro);margin-top:10px;padding-left:34px}.tl .it{position:relative;margin-bottom:34px}.tl .it:before{content:"";position:absolute;left:-40px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--lil2)}.tl .q{font-size:13px;letter-spacing:.15em;text-transform:uppercase;color:var(--ouro)}.tl h3{font-size:24px;margin:2px 0}.tl .c{font-style:italic;color:var(--lil2);margin-bottom:6px}.tl .dest{border-left:1px solid var(--ouro);padding-left:16px;margin-top:10px;font-family:"Playfair Display";font-style:italic;color:var(--lil2);font-size:19px}.form{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:20px}
+header{position:relative;overflow:hidden}header .wrap{position:relative;z-index:1}
+.av{position:relative;justify-self:center;width:100%;max-width:380px}
+.av img{width:100%;display:block;border-radius:50%;-webkit-mask:radial-gradient(circle,#000 62%,transparent 71%);mask:radial-gradient(circle,#000 62%,transparent 71%);animation:flut 5s ease-in-out infinite;transform-origin:50% 90%}
+.av:after{content:"";position:absolute;inset:6%;border:1px solid var(--ouro);border-radius:50%;opacity:.5;animation:gira 22s linear infinite;border-style:dashed}
+@keyframes flut{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(1.5deg)}}
+@keyframes gira{to{transform:rotate(360deg)}}
+.blob{position:absolute;border-radius:50%;filter:blur(40px);opacity:.35;pointer-events:none;animation:deriva 18s ease-in-out infinite alternate}
+.b1{width:340px;height:340px;background:var(--lil2);top:-80px;right:8%}.b2{width:260px;height:260px;background:var(--ouro);bottom:-60px;left:-40px;opacity:.18;animation-duration:24s}.b3{width:180px;height:180px;background:var(--lil);top:40%;left:45%;opacity:.15;animation-duration:15s}
+@keyframes deriva{to{transform:translate(40px,-30px) scale(1.15)}}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s ease,transform .8s ease}.rv.on{opacity:1;transform:none}
+.tl .it{opacity:0;transform:translateX(-24px);transition:opacity .6s ease,transform .6s ease}.tl .it.on{opacity:1;transform:none}
+.tl .it:before{transition:transform .4s}.tl .it.on:before{animation:pulso 2.4s ease-out 1}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(140,118,176,.6)}100%{box-shadow:0 0 0 14px rgba(140,118,176,0)}}
+.caso,.card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s}
+.caso:hover{transform:translateY(-6px);border-color:var(--ouro);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(18,29,20,.12);border-color:var(--lil2)}
+.btn{transition:transform .25s,background .25s}.btn:hover{transform:translateY(-2px)}
+@media(max-width:760px){.av{max-width:230px;order:-1}.b1{width:220px;height:220px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rv,.tl .it{opacity:1;transform:none}}
+.cv{padding:28px;border:1px solid rgba(184,166,212,.3);margin-bottom:26px;display:grid;grid-template-columns:5fr 7fr;gap:30px;align-items:center}.cv h3{font-size:24px;margin:0 0 10px}.cv p{margin:6px 0}.cv b{color:var(--ouro);font-weight:600}.cv figure{margin:0}.cv img{width:100%;border:1px solid rgba(232,201,119,.4);border-radius:8px;display:block}.cv figcaption{font-size:12px;opacity:.7;margin-top:6px}.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:10px}.mini div{border:1px solid rgba(184,166,212,.3);padding:18px}.mini h3{font-size:19px;margin:0 0 6px}.ferr{margin-top:28px;font-size:15px;opacity:.85}@media(max-width:800px){.cv,.mini{grid-template-columns:1fr}}</style></head><body>
+<header class="dark"><i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i><div class="wrap"><div>
+<div class="tag">Direito · Produto · Automação jurídica</div>
+<h1>Advogada que transforma <em>rotina jurídica</em> em sistema.</h1>
+<p>Sou Camyle Ribeiro, advogada com prática no contencioso e no controle de prazos. Desenho e opero automações jurídicas: entendo onde o trabalho trava, traduzo a regra do processo em regra de sistema e acompanho a ferramenta no uso real.</p>
+<div class="chips"><span>Automação jurídica</span><span>Regras de prazos</span><span>Fluxos de revisão</span><span>Dados de decisões</span></div>
+<a class="btn" href="#casos">Ver estudos de caso</a>
+</div><div class="av"><img src="assets/avatar-camyle.jpg" alt="Ilustração de Camyle Ribeiro"></div></div></header>
+
+<section id="sobre"><div class="wrap duas"><div><div class="tag">Quem sou</div><h2>A ponte entre o direito e o produto</h2><div class="fio"></div></div>
+<div><p>Venho da linha de frente: leitura de publicações, controle de prazos, petições, audiências. Como controller e prazista, fui responsável por garantir que cada prazo fosse visto, distribuído e cumprido.</p><br>
+<p>Nesse papel aprendi onde o trabalho jurídico perde tempo e segurança, e passei a construir sistemas para resolver isso. Hoje falo as duas línguas: a do processo e a do produto.</p>
+<div class="dados"><div><b data-n="126">126</b>peças geradas em 30 dias</div><div><b data-n="55">55</b>peças protocoladas no mês</div><div><b data-n="300" data-s="+">300+</b>processos sob minha responsabilidade</div></div></div></div></section>
+
+<section class="dark" id="casos"><div class="wrap"><div class="tag">Estudos de caso</div><h2>O que construí, na tela</h2><div class="fio"></div>
+<div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">01</span> Publicações viram prazos</h3><p><b>Problema:</b> leitura manual diária, risco de prazo perdido.</p><p><b>Solução:</b> rotina que lê as publicações e lança prazos e audiências já calculados.</p><p><b>Resultado:</b> tudo pronto para conferir às 8h.</p></div><figure><img src="assets/demo/pauta-audiencias.png" alt="Pauta de audiências gerada a partir das publicações" loading="lazy"><figcaption>Pauta de audiências gerada a partir das publicações</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">02</span> Painel de prazos</h3><p><b>Problema:</b> planilha difícil de enxergar por dia e por urgência.</p><p><b>Solução:</b> calendário que espelha a planilha em tempo real.</p><p><b>Resultado:</b> 157 prazos numa única fonte.</p></div><figure><img src="assets/demo/prazos.png" alt="Painel de prazos em calendário" loading="lazy"><figcaption>Painel de prazos em calendário</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">03</span> Petições personalizadas</h3><p><b>Problema:</b> peças repetitivas recomeçavam do zero.</p><p><b>Solução:</b> os modelos viram skills, mas cada petição sai personalizada para o caso, com os fatos, documentos e pedidos daquele cliente. Revisão e versões em cada peça.</p><p><b>Resultado:</b> 126 peças em 30 dias, nada sai sem aprovação.</p></div><figure><img src="assets/demo/peticao-drive.gif" alt="Abrindo a petição no Drive: pasta do cliente com PDFs numerados e a peça" loading="lazy"><figcaption>Dados fictícios: “Abrir no Drive” leva à pasta do cliente, com documentos numerados na ordem da peça</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">04</span> Agenda por prazo fatal</h3><p><b>Problema:</b> o dia seguia o que chegava, não o que vencia.</p><p><b>Solução:</b> blocos por dia a partir dos prazos fatais, e cada tarefa traz o link para a pasta do cliente no Drive.</p><p><b>Resultado:</b> 192 tarefas concluídas no mês.</p></div><figure><img src="assets/demo/agenda-demo.gif" alt="Abrindo um dia, recolhendo o bloco e marcando tarefa" loading="lazy"><figcaption>Abrindo um dia, marcando tarefa; cada tarefa abre a pasta do cliente no Drive</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">05</span> Documentos do cliente</h3><p><b>Problema:</b> pedir e cobrar documentos tomava horas.</p><p><b>Solução:</b> mensagem no grupo do cliente, enviada só após aprovação.</p><p><b>Resultado:</b> a advogada entra com tudo completo.</p></div><figure><img src="assets/demo/whatsapp-aprovacao.png" alt="Exemplo fictício: mensagem ao cliente e aprovação no Pana" loading="lazy"><figcaption>Exemplo fictício: mensagem ao cliente e aprovação no Pana</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">06</span> Descumprimentos de liminar</h3><p><b>Problema:</b> casos espalhados entre planilha e anotações.</p><p><b>Solução:</b> quadro por etapa, com o que falta e quem deve.</p><p><b>Resultado:</b> 32 casos acompanhados sem perder nenhum.</p></div><figure><img src="assets/demo/descumprimentos.png" alt="Quadro de descumprimentos por etapa" loading="lazy"><figcaption>Quadro de descumprimentos por etapa</figcaption></figure></div><div class="cv"><div><h3><span style="color:var(--ouro);font-size:15px">07</span> Tudo registrado na planilha</h3><p><b>Problema:</b> conversas com cliente e envios de documentos se perdiam no WhatsApp e no e-mail.</p><p><b>Solução:</b> toda conversa com o cliente e todo documento enviado ficam registrados nas OBSERVAÇÕES da planilha de prazos, com a data. Ex.: “Documentação enviada ao cliente em 12/11”.</p><p><b>Resultado:</b> qualquer pessoa da equipe abre o processo e sabe o que já foi feito.</p></div><figure><img src="assets/demo/prazos-observacoes.png" alt="Planilha de prazos com registros datados nas observações" loading="lazy"><figcaption>Dados fictícios: registros datados nas observações</figcaption></figure></div><div class="mini"><div><h3>Decisões por vara</h3><p>Base por vara, magistrado e tema para escolher a tese.</p></div><div><h3>Sistemas processuais</h3><p>Consulta e protocolo no PJe, eproc e Projudi, com autorização.</p></div><div><h3>Pastas organizadas</h3><p>PDFs numerados na ordem da peça, sem duplicatas.</p></div></div><p class="ferr"><b style="color:var(--ouro)">Ferramentas:</b> construo com Pana e Claude.</p><h3 style="margin-top:40px;font-size:24px">Outras automações</h3><ul class="lista">
+<li>Quadro de descumprimentos de ordens judiciais, cobrado até a resolução</li><li>Pauta de audiências com cartão de preparação</li><li>Relatório diário de prazos e pendências para a coordenação</li><li>Avisos de andamento com aprovação prévia da advogada</li><li>Planilhas de cálculo de reajuste e relatórios</li></ul></div></section>
+
+<section id="produto"><div class="wrap"><div class="tag">Como eu penso produto</div><h2>Princípios que levo para cada sistema</h2><div class="fio"></div>
+<div class="principio" style="color:var(--lil2)">A IA sinaliza, a advogada decide.</div><div class="grid">
+<div class="card"><div class="n">01</div><h3>Humano no controle</h3><p>A automação organiza, sugere e alerta. A decisão jurídica continua com quem assina.</p></div>
+<div class="card"><div class="n">02</div><h3>Regras do dia a dia</h3><p>Regras de negócio saem da prática: dias úteis, feriados, suspensões, exceções que só quem já perdeu sono por um prazo conhece.</p></div>
+<div class="card"><div class="n">03</div><h3>Validação antes de envio</h3><p>Nada sai para fora sem conferência. Revisão e versões fazem parte do fluxo, não são um passo opcional.</p></div>
+<div class="card"><div class="n">04</div><h3>Privacidade e sigilo</h3><p>Dado jurídico é sensível. Acesso mínimo, nada exposto sem necessidade e respeito ao sigilo profissional desde o desenho.</p></div>
+</div></div></section>
+
+<section id="trajetoria"><div class="wrap"><div class="tag">Trajetória</div><h2>Do balcão do fórum ao produto</h2><div class="fio"></div><div class="tl"><div class="it"><div class="q">Fev/2026 até hoje</div><h3>Melo Bertino Advocacia</h3><div class="c">Advogada controller e prazista em direito da saúde</div><p>Responsável por todos os processos do escritório: controle de prazos, análise de publicações, estratégia processual, petições, audiências e sustentações orais. Foi aqui que construí as automações apresentadas neste portfólio.</p></div><div class="it"><div class="q">Mai/2025 a Fev/2026</div><h3>Robson Menezes Advogados</h3><div class="c">Advogada em direito da saúde</div><p>Responsável direta por cerca de 180 processos, com foco em casos de autismo e reajustes de plano de saúde. Sustentações orais praticamente toda semana, peças e atendimento a clientes.</p></div><div class="it"><div class="q">Nov/2023 a Mai/2025</div><h3>SM Advogados e Consultores</h3><div class="c">Advogada associada e coordenadora da área de saúde</div><p>Responsável direta pelos prazos de cerca de 300 processos: análise das intimações, resposta aos prazos, audiências, reuniões com clientes e sustentações orais. Coordenei a área de saúde, fui responsável por tributário e aduaneiro durante 6 meses e corresponsável pela área trabalhista, com audiências e sustentações orais.</p></div><div class="it"><div class="q">Mar a Nov/2023</div><h3>ASTEPI</h3><div class="c">Advogada voluntária</div><p>Atuação cível e em conciliações.</p></div><div class="it"><div class="q">Mai a Dez/2019</div><h3>Diogo Santos e Advogados</h3><div class="c">Estagiária em direito da saúde</div><p>Diligências externas no fórum, em contato direto com juízes, servidores e oficiais de justiça.</p></div><div class="it"><div class="q">2017 a 2020</div><h3>Direito previdenciário</h3><div class="c">Estágio voluntário e Pessoa Tomé Advogados</div><p>Estágio voluntário desde 2017 e depois na Pessoa Tomé Advogados (jul/2018 a mai/2019 e jan a mar/2020), com petições iniciais repetitivas de auxílios e aposentadorias.</p><div class="dest">Foi aqui que vi de perto o trabalho repetitivo que hoje eu automatizo.</div></div></div><div class="form"><p><b>Formação</b><br>Direito, Universidade Católica de Pernambuco (2022.1)</p><p><b>Sistemas processuais</b><br>PJe, e-SAJ, Projudi e eproc</p></div></div></section>
+
+<section style="padding-top:0"><div class="wrap"><div class="tag">Habilidades</div><h2>Jurídico e tecnologia</h2><div class="fio"></div><div class="grid">
+<div class="card"><div class="n">01</div><h3>Modelagem de fluxos</h3><p>Transformo rotinas jurídicas em etapas, papéis, gatilhos e exceções.</p></div>
+<div class="card"><div class="n">02</div><h3>Prompts e modelos</h3><p>Escrevo prompts e modelos de peças validados, com critérios claros de revisão.</p></div>
+<div class="card"><div class="n">03</div><h3>Prazos processuais</h3><p>Regras de contagem em dias úteis, feriados e suspensões, traduzidas para sistema.</p></div>
+<div class="card"><div class="n">04</div><h3>PJe e tribunais</h3><p>Conheço na prática os sistemas dos tribunais, publicações e intimações.</p></div>
+<div class="card"><div class="n">05</div><h3>Planilhas e dados</h3><p>Estruturo bases, cálculos e painéis que a equipe consegue manter.</p></div>
+<div class="card"><div class="n">06</div><h3>Treinamento de equipe</h3><p>Levo a ferramenta para o uso real e formo a equipe para trabalhar com ela.</p></div>
+</div></div></section>
+
+<section id="contato"><div class="wrap" style="text-align:center"><div class="tag">Contato</div><h2>Vamos conversar?</h2><div class="fio" style="margin:18px auto 28px"></div>
+<p><a class="btn f" href="mailto:camyledefatima@gmail.com" style="color:var(--verde)">camyledefatima@gmail.com</a><a class="btn" href="https://instagram.com/advcamyleribeiro" style="color:var(--verde)">@advcamyleribeiro</a></p></div></section>
+<footer><img src="assets/logo-timbrado-transparente.png" alt="CR"><p>Camyle Ribeiro · OAB/PE 60.250 · Recife/PE</p></footer>
+<script>
+(function(){var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var els=document.querySelectorAll('section .wrap > *:not(.tl), .caso, .card, .dados > div');
+if(rm){return}
+els.forEach(function(e){e.classList.add('rv')});
+document.querySelectorAll('.grid .card').forEach(function(c,i){c.style.transitionDelay=(i%4)*90+'ms'});
+function count(b){var n=+b.dataset.n,s=b.dataset.s||'',t0=null;function f(t){t0=t0||t;var p=Math.min((t-t0)/1600,1);b.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)}b.textContent='0'+s;requestAnimationFrame(f)}
+document.querySelectorAll('[data-n]').forEach(function(b){b.textContent='0'+(b.dataset.s||'')});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var t=e.target;io.unobserve(t);
+if(t.classList.contains('tl')){t.querySelectorAll('.it').forEach(function(it,i){setTimeout(function(){it.classList.add('on')},i*220)});return}
+t.classList.add('on');t.querySelectorAll&&t.querySelectorAll('[data-n]').forEach(count)})},{threshold:.15});
+els.forEach(function(e){io.observe(e)});document.querySelectorAll('.tl').forEach(function(e){io.observe(e)});
+})();
+</script></body></html>
